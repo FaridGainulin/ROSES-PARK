@@ -1,0 +1,83 @@
+.invest-section
+  background-color #F5F5F5
+
+  &__container
+    position relative
+    z-index 1
+    padding 20px 0 20px 0
+    +above($breakpoints.lg)
+      padding 110px 0 110px 0
+
+  &__plate1,
+  &__plate2
+    display: none
+    +above($breakpoints.lg)
+      display: block
+      position: absolute
+      z-index -1
+
+  &__plate1
+    top: -226px;
+    left: -788px;
+
+  &__plate2
+    top: 136px;
+    right: -840px;
+
+  &__title
+    text-align: center
+    text-transform: uppercase
+    color: $color-text-black
+    padding 20px 0 20px 0
+    +above($breakpoints.lg)
+      padding 32px 0 32px 0
+
+  &__text
+    text-align: center
+    color: $color-text-black
+    padding 0 0 20px 0
+    +above($breakpoints.lg)
+      padding 0 0 80px 0
+
+  &__cards
+    +above($breakpoints.xxl)
+      display: flex
+      flex-direction: row
+      gap: 20px
+
+  &__card
+    // height: 353px
+    background-color $color-text-black
+    border-radius: 10px
+    padding 12px
+    width 300px !important
+    +above($breakpoints.sm)
+      width 360px !important
+      // height: 362px
+    +above($breakpoints.xxl)
+      width 380px !important
+      height: 392px
+
+  &__card-title
+    line-height: 95%
+
+  &__card-icon
+    margin 40px 0
+
+  &__card-text
+    padding-bottom 30px
+    line-height: 120%
+
+  &__card-wrapper
+    border: 1px solid $color-yellow
+    border-radius: 10px
+    padding 42px 0
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+
+
+.invest-item
+  width 242px
+  margin 0 auto

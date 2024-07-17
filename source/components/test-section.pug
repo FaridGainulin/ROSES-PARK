@@ -1,0 +1,46 @@
+section.test-section
+  .wrapper
+    .test-section__container
+      .reasons-section__line
+      h2.test-section__title.font-s-74.font-w-zt-medium
+        | Почувствуйте себя <br> владельцем ресторана <br>
+        span.mark-yellow ROSES park
+      .test-section__sub-title.font-s-18.font-w-medium
+        | Запишитесь 
+        span.mark-yellow на тест-драйв франшизы 
+        | и вы узнаете:
+      .reasons-section__line
+      .swiper-medium
+        .test-section__cards.swiper-wrapper
+          .test-section__card.swiper-slide
+            img.test-section__card-icon(src="images/main-section-check.svg" loading="lazy" width="23" height="21" alt="check")
+            .test-section__card-text.font-w-regular.font-s-16 Как вести <br> документооборот
+          .test-section__card.swiper-slide
+            img.test-section__card-icon(src="images/main-section-check.svg" loading="lazy" width="23" height="21" alt="check")
+            .test-section__card-text.font-w-regular.font-s-16 Как расширять <br> клиентскую базу
+          .test-section__card.swiper-slide
+            img.test-section__card-icon(src="images/main-section-check.svg" loading="lazy" width="23" height="21" alt="check")
+            .test-section__card-text.font-w-regular.font-s-16 Как работать <br> с поставщиками
+          .test-section__card.swiper-slide
+            img.test-section__card-icon(src="images/main-section-check.svg" loading="lazy" width="23" height="21" alt="check")
+            .test-section__card-text.font-w-regular.font-s-16 Как избежать ошибок <br> на старте
+          .test-section__card.swiper-slide
+            img.test-section__card-icon(src="images/main-section-check.svg" loading="lazy" width="23" height="21" alt="check")
+            .test-section__card-text.font-w-regular.font-s-16 Как поддерживать качество <br> сервиса на высоком уровне
+          .test-section__card.swiper-slide
+            img.test-section__card-icon(src="images/main-section-check.svg" loading="lazy" width="23" height="21" alt="check")
+            .test-section__card-text.font-w-regular.font-s-16 Как всегда быть в курсе <br> новинок ресторанного бизнеса
+          .test-section__card.swiper-slide
+            img.test-section__card-icon(src="images/main-section-check.svg" loading="lazy" width="23" height="21" alt="check")
+            .test-section__card-text.font-w-regular.font-s-16 Как и из чего будет <br> формироваться ваша прибыль
+        .medium-pagination.swiper-progress-medium
+      .test-section__bottom
+        .test-section__bottom-title.font-w-regular.font-s-24.text-center
+          | Запишитесь на тест-драйв франшизы 
+          span.mark-yellow ROSES PARK
+        form.test-section__form(data-feedback-form)
+          input.input.test-item(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input.test-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn.btn--black-shadow.test-item(type="submit") Записаться
+        .test-section__privacy.text-center
+          include ../components/agree.pug

@@ -1,0 +1,127 @@
+.finances-section
+  background-color #F5F5F5
+
+  &__container
+    position relative
+    z-index 1
+    color: $color-text-black
+    padding 20px 0 20px 0
+    +above($breakpoints.lg)
+      padding 70px 0 162px 0
+
+  &__line
+    width 0px
+    height: 30px
+    border-left: 1px solid $color-dark-red
+    margin 0 auto
+    +above($breakpoints.md)
+      height: 50px
+
+  &__title
+    padding 30px
+    +above($breakpoints.lg)
+      padding 32px
+      letter-spacing: -1px
+
+  &__text
+    padding-bottom 20px
+    +above($breakpoints.lg)
+      padding-bottom 129px
+
+  &__cards
+    +above($breakpoints.md)
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content space-between
+      row-gap: 34px
+      column-gap: 171px
+
+  &__card
+    width 280px !important
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    border-bottom: 1px solid $color-text-black
+    +above($breakpoints.sm)
+      width 300px !important
+    +above($breakpoints.md)
+      width 280px !important
+
+  &__card-text
+    padding 6px 0 28px 0
+
+  &__img
+    width 300px
+    height: auto
+    margin 30px auto 0
+    +above($breakpoints.md)
+      margin 0
+      width: 400px;
+      position: absolute;
+      top: 235px
+      left: 50%;
+      transform: translateX(-50%);
+    +above($breakpoints.lg)
+      top: 397px;
+    +above($breakpoints.xxl)
+      width 555px
+      height: 554px
+      top: 360px;
+
+  &__bottom
+    width 100%
+    max-width 984px
+    margin 30px auto 0
+    color: $color-white
+    background-color $color-text-black
+    border-radius: 10px
+    padding 12px
+    +above($breakpoints.md)
+      margin 131px auto 0
+
+  &__bottom-wrapper
+    border: 1px solid $color-yellow
+    border-radius: 10px
+    padding 20px 20px
+    +above($breakpoints.xxxl)
+      padding 28px 70px
+
+  &__bottom-text
+    padding 16px 0 24px 0
+
+  &__form
+    display: flex
+    flex-direction: column
+    gap: 10px
+    margin: 0 auto 18px
+    align-items: center
+    +above($breakpoints.sm)
+      justify-content center
+      flex-direction: row
+      flex-wrap: wrap
+
+  &__privacy
+    text-align: center
+    color: #DDDDDD
+
+  &__geometric
+    display: none
+    +above($breakpoints.lg)
+      display: block
+      position: absolute
+      z-index -1
+      bottom: 70px
+      right: -90px
+      width 183px
+      height: 183px
+      background-color $color-dark-red
+      border-top-left-radius: 110px
+      border-bottom-right-radius: 110px
+      +above($breakpoints.xxl)
+        right: 0
+      
+.item-finances
+  width 100%
+  max-width 259px

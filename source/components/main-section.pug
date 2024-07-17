@@ -1,0 +1,31 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      .main-section__header-wrapper
+        include ../components/header.pug
+      .main-section__inner
+        h1.main-section__title.font-w-zt-medium.font-s-85.text-up Поможем вам <br> открыть свой <br> ресторан
+        .main-section__sub-title.font-w-fiorina.font-s-42
+          | с прибылью от  
+          span.mark-bg 4,2 млн руб. в год
+        .main-section__text.font-w-regular.font-s-18 Получите подробный план открытия
+        form.main-section__form(data-feedback-form)
+          input.input.item-main(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input.item-main(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn.item-main(type="submit") Получить
+          .main-section__privacy.item-main
+            include ../components/agree.pug
+        .swiper-small
+          .main-section__items.swiper-wrapper
+            .main-section__item.swiper-slide
+              img.main-section__logo(src="images/main-section-check.svg" loading="lazy" width="23" height="21" alt="check")
+              .font-s-16 Поддержка <br> на всех этапах
+            .main-section__item.swiper-slide
+              img.main-section__logo(src="images/main-section-check.svg" loading="lazy" width="23" height="21" alt="check")
+              .font-s-16 Стабильная <br> прибыль
+            .main-section__item.swiper-slide
+              img.main-section__logo(src="images/main-section-check.svg" loading="lazy" width="23" height="21" alt="check")
+              .font-s-16 Высокая <br> рентабельность
+          .small-pagination.swiper-progress-small
+        img.main-section__img(src="images/main-section-img.png" loading="lazy" width="594" height="694" alt="image")
+  .main-section__arc

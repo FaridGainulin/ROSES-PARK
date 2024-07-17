@@ -1,0 +1,140 @@
+.reasons-section
+  background-image: url("../images/reasons-section-bg.jpg")
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+
+  &__arc-up
+    height: 64px
+    background-image: url("../images/arc-up.svg")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+
+  &__container
+    position relative
+    z-index 1
+    padding 20px 0 20px 0
+    +above($breakpoints.lg)
+      padding 46px 0 134px 0
+
+  &__plate1,
+  &__plate2,
+  &__rose
+    display: none
+    +above($breakpoints.lg)
+      display: block
+      position absolute
+      z-index -1
+
+  &__plate1
+    bottom: 13px;
+    left: -666px;
+
+  &__plate2
+    top: 138px;
+    right: -367px;
+
+  &__rose
+    bottom: 283px;
+    right: -319px;
+
+  &__line
+    width 0px
+    height: 30px
+    border-left: 1px solid $color-yellow
+    margin 0 auto
+    +above($breakpoints.md)
+      height: 50px
+
+  &__title
+    padding 20px 0 20px 0
+    +above($breakpoints.lg)
+      padding 32px 0 90px 0
+
+  &__cards
+    +above($breakpoints.lg)
+      display: flex
+      flex-direction: row
+      justify-content center
+      gap: 20px
+
+  &__card
+    position relative
+    width 280px !important
+    padding 16px 16px 30px 16px
+    background-color #2B2B2B
+    +above($breakpoints.sm)
+      width 360px !important
+    +above($breakpoints.lg)
+      width 280px !important
+
+  &__img
+    margin 0 auto
+
+  &__number
+    position: absolute
+    width 50px
+    height: 50px
+    left: 50%
+    top 185px
+    transform: translateX(-50%)
+    background-color $color-red
+    border-radius: 50%
+    display flex
+    justify-content center
+    align-items: center
+    +above($breakpoints.sm)
+      width 75px
+      height: 75px
+      top 172px
+    +above($breakpoints.lg)
+      width 100px
+      height: 100px
+      top 160px
+
+  &__text
+    padding-top 78px
+    text-align: center
+
+  &__bottom
+    width 100%
+    max-width 984px
+    margin 30px auto 0
+    color: $color-white
+    background-color $color-text-black
+    border-radius: 10px
+    padding 12px
+    +above($breakpoints.md)
+      margin 76px auto 0
+
+  &__bottom-wrapper
+    border: 1px solid $color-yellow
+    border-radius: 10px
+    padding 20px 20px
+    +above($breakpoints.xxxl)
+      padding 43px 50px
+
+  &__bottom-text
+    padding 16px 0 24px 0
+
+  &__form
+    display: flex
+    flex-direction: column
+    gap: 10px
+    margin: 0 auto 18px
+    align-items: center
+    +above($breakpoints.sm)
+      justify-content center
+      flex-direction: row
+      flex-wrap: wrap
+
+  &__privacy
+    text-align: center
+    color: #DDDDDD
+
+.item-reasons
+  width 100%
+  max-width 270px
+
+

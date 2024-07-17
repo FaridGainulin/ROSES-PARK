@@ -1,0 +1,51 @@
+section.support-section
+  .wrapper
+    .support-section__container
+      img.support-section__img(src="images/support-section-img.png" loading="lazy" width="480" height="681" alt="image")
+      .support-section__line
+      h2.support-section__title.font-s-74.font-w-zt-medium.text-center.text-up
+        | Откройте свой ресторан
+        br
+        | и зарабатывайте
+        br
+        span.mark от 351 000 рублей в месяц
+      .support-section__text.font-s-20.font-w-medium.text-center
+        | Команда 
+        span.mark-yellow ROSES PARK 
+        span поддержит вас на всех этапах
+      .swiper-small
+        .support-section__cards.swiper-wrapper
+          .support-section__card.swiper-slide
+            img.support-section__card-icon(src="images/support-section-icon1.svg" loading="lazy" width="73" height="73" alt="icon")
+            .support-section__card-text.font-w-regular.font-s-16 Предоставим онлайн <br> обучение
+          .support-section__card.swiper-slide
+            img.support-section__card-icon(src="images/support-section-icon2.svg" loading="lazy" width="73" height="73" alt="icon")
+            .support-section__card-text.font-w-regular.font-s-16 Подключим к горячей <br> линии 
+          .support-section__card.swiper-slide
+            img.support-section__card-icon(src="images/support-section-icon3.svg" loading="lazy" width="73" height="73" alt="icon")
+            .support-section__card-text.font-w-regular.font-s-16 Запустим бизнес <br> дистанционно
+          .support-section__card.swiper-slide
+            img.support-section__card-icon(src="images/support-section-icon4.svg" loading="lazy" width="73" height="73" alt="icon")
+            .support-section__card-text.font-w-regular.font-s-16 Добавим в закрытое <br> сообщество
+          .support-section__card.swiper-slide
+            img.support-section__card-icon(src="images/support-section-icon5.svg" loading="lazy" width="73" height="73" alt="icon")
+            .support-section__card-text.font-w-regular.font-s-16 Обеспечим пошаговое <br> становление бизнеса
+          .support-section__card.swiper-slide
+            img.support-section__card-icon(src="images/support-section-icon6.svg" loading="lazy" width="73" height="73" alt="icon")
+            .support-section__card-text.font-w-regular.font-s-16 Дадим любые <br> консультации, касающиеся <br> ведения бизнеса
+          .support-section__card.swiper-slide
+            img.support-section__card-icon(src="images/support-section-icon7.svg" loading="lazy" width="73" height="73" alt="icon")
+            .support-section__card-text.font-w-regular.font-s-16 Добавим <br> на официальный сайт
+        .small-pagination.swiper-progress-small
+      .support-section__bottom
+        .support-section__bottom-wrapper
+          .support-section__bottom-title.font-w-regular.font-s-24.text-center
+            | Получите подробный план по открытию 
+            span.mark-yellow ROSES PARK
+          form.support-section__form(data-feedback-form)
+            input.input.item-reasons(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+            input.input.item-reasons(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+            button.btn.btn--black-shadow.item-reasons(type="submit") скачать ПРЕЗЕНТАЦИЮ
+          .support-section__privacy
+            include ../components/agree.pug
+

@@ -1,0 +1,78 @@
+.start-section
+  background-color #F5F5F5
+
+  &__container
+    position relative
+    color: $color-text-black
+    padding 20px 0 0 0
+    +above($breakpoints.xxl)
+      padding 136px 0 161px 0
+
+  &__img
+    display: none
+    +above($breakpoints.xxl)
+      display: block
+      position: absolute
+      top: -107px;
+      right: -118px;
+
+  &__box
+    +above($breakpoints.md)
+      padding-left 400px
+    +above($breakpoints.xxl)
+      padding-left 590px
+
+
+  &__title,
+  &__sub-title,
+  &__text
+    text-align: center
+    +above($breakpoints.md)
+      text-align: start
+
+  &__title
+    padding 20px 0 8px 0
+    +above($breakpoints.lg)
+      padding 32px 0 8px 0
+
+  &__sub-title
+    +above($breakpoints.xxl)
+      letter-spacing: -2px
+
+  &__text
+    padding 20px 0 20px 0
+    +above($breakpoints.lg)
+      padding 36px 0 24px
+
+  &__form
+    width 286px
+    margin 0 auto
+    display: flex
+    flex-direction: column
+    gap 10px
+    padding-bottom 30px
+    +above($breakpoints.md)
+      margin 0
+    +above($breakpoints.xxl)
+      width 585px
+      flex-direction: row
+
+  &__img-hand
+    width 300px
+    height: auto
+    margin 0 auto
+    +above($breakpoints.md)
+      position: absolute
+      bottom: 0
+      left: 0
+    +above($breakpoints.xxl)
+      width 597px
+      height: 758px
+      bottom: 0
+      left: -53px
+
+
+.start-item
+  width 286px
+
+

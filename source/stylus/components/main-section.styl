@@ -1,0 +1,108 @@
+.main-section
+  background-image: url("../images/main-section-bg.jpg")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
+  &__container
+    position relative
+    padding 20px 0 20px 0
+    +above($breakpoints.lg)
+      padding 41px 0 152px 0
+
+  &__header-wrapper
+    color: $color-text-black
+    background-color $color-white
+    padding 12px 7px
+    border-radius: 10px
+    +above($breakpoints.sm)
+      padding 12px 36px
+  
+  &__title
+    padding 20px 0 20px 0
+    +above($breakpoints.lg)
+      letter-spacing: -1px
+      padding 93px 0 25px 0
+
+  &__sub-title
+    padding-bottom 20px
+    +above($breakpoints.lg)
+      padding-bottom 49px
+      letter-spacing: -2px
+
+  &__text,
+  &__sub-title,
+  &__title
+    text-align: center
+    +above($breakpoints.lg)
+      text-align: start
+
+  &__form
+    margin 20px auto 30px
+    width 100%
+    max-width: 526px
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    +above($breakpoints.sm)
+      flex-direction: row
+      flex-wrap: wrap
+    +above($breakpoints.lg)
+      margin 24px 0 50px 0
+
+  &__privacy
+    color: #DA7288
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+      padding-left 20px
+
+  &__items
+    +above($breakpoints.sm)
+      width 609px
+      margin 0 auto
+      display: flex
+      flex-direction: row
+      justify-content flex-end
+    +above($breakpoints.lg)
+      margin 0
+      justify-content space-between
+
+  &__item
+    width 250px !important
+    display: flex
+    flex-direction: row
+    justify-content center
+    gap: 24px
+    +above($breakpoints.sm)
+      justify-content start
+      width 191px !important
+
+  &__img
+    width 250px
+    height: auto
+    margin 30px auto 0
+    +above($breakpoints.sm)
+      width 400px
+    +above($breakpoints.lg)
+      position: absolute
+      width 470px
+      bottom: 189px;
+      right: -58px;
+    +above($breakpoints.xxl)
+      width 594px
+      height: 694px
+      bottom: 113px;
+      right: -70px;
+
+  &__arc
+    +above($breakpoints.lg)
+      height: 64px
+      background-image: url("../images/arc-bg.svg")
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+
+.item-main
+  width 258px

@@ -1,0 +1,47 @@
+section.reasons-section
+  .reasons-section__arc-up
+  .wrapper
+    .reasons-section__container
+      img.reasons-section__plate1(src="images/reasons-section-plate1.png" loading="lazy" width="836" height="836" alt="plate")
+      img.reasons-section__plate2(src="images/reasons-section-plate2.png" loading="lazy" width="529" height="529" alt="plate")
+      img.reasons-section__rose(src="images/reasons-section-rose.png" loading="lazy" width="353" height="291" alt="rose")
+      .reasons-section__line
+      h2.reasons-section__title.font-w-zt-medium.font-s-74.text-up.text-center
+        span.mark-yellow 4 причины 
+        | открыть
+        br
+        | свой ресторан 
+        span.mark-grey ROSES park
+      .swiper-lg
+        .reasons-section__cards.swiper-wrapper
+          .reasons-section__card.swiper-slide
+            img.reasons-section__img(src="images/reasons-section-img1.jpg" loading="lazy" width="248" height="193" alt="img")
+            .reasons-section__number.font-w-zt-regular.font-s-60 01
+            .reasons-section__text.font-s-16 Стабильно высокий спрос <br> и широкие возможности
+          .reasons-section__card.swiper-slide
+            img.reasons-section__img(src="images/reasons-section-img2.jpg" loading="lazy" width="248" height="193" alt="img")
+            .reasons-section__number.font-w-zt-regular.font-s-60 02
+            .reasons-section__text.font-s-16 Большая маржинальность <br> и высокая рентабельность
+          .reasons-section__card.swiper-slide
+            img.reasons-section__img(src="images/reasons-section-img3.jpg" loading="lazy" width="248" height="193" alt="img")
+            .reasons-section__number.font-w-zt-regular.font-s-60 03
+            .reasons-section__text.font-s-16 Надежная и проверенная <br> финансовая модель
+          .reasons-section__card.swiper-slide
+            img.reasons-section__img(src="images/reasons-section-img4.jpg" loading="lazy" width="248" height="193" alt="img")
+            .reasons-section__number.font-w-zt-regular.font-s-60 04
+            .reasons-section__text.font-s-16 Самореализация <br> и статус хозяина ресторана
+        .lg-pagination.swiper-progress-lg
+      .reasons-section__bottom
+        .reasons-section__bottom-wrapper
+          .reasons-section__bottom-title.font-w-regular.font-s-24.text-center
+            | Узнайте о других преимуществах бизнеса по франшизе 
+            span.mark-yellow ROSES PARK
+          .reasons-section__bottom-text.text-center
+            span.font-s-18 Скачайте подробную презентацию
+          form.reasons-section__form(data-feedback-form)
+            input.input.item-reasons(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+            input.input.item-reasons(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+            button.btn.btn--black-shadow.item-reasons(type="submit") скачать ПРЕЗЕНТАЦИЮ
+          .reasons-section__privacy
+            include ../components/agree.pug
+

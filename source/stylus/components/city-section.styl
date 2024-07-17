@@ -1,0 +1,63 @@
+.city-section
+  background-image: url("../images/city-section-bg.jpg")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
+  &__container
+    position relative
+    padding 20px 0 20px 0
+    +above($breakpoints.lg)
+      padding 183px 0 203px 0
+
+  &__title
+    padding 0 0 20px 0
+    +above($breakpoints.lg)
+      letter-spacing: -1px
+      padding 0 0 31px 0
+
+  &__text,
+  &__title
+    text-align: center
+    +above($breakpoints.lg)
+      text-align: start
+
+  &__form
+    margin 20px auto 30px
+    width 100%
+    max-width: 526px
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    +above($breakpoints.sm)
+      flex-direction: row
+      flex-wrap: wrap
+    +above($breakpoints.lg)
+      margin 24px 0 0 0
+
+  &__privacy
+    color: #DA7288
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+      padding-left 20px
+
+  &__img
+    width 250px
+    height: auto
+    margin 30px auto 0
+    +above($breakpoints.sm)
+      width 400px
+    +above($breakpoints.lg)
+      margin 0
+      position: absolute
+      width 470px
+      bottom: 130px;
+      right: -58px;
+    +above($breakpoints.xxl)
+      width 559px
+      height: 651px
+      bottom: 103px;
+      right: 0;
+

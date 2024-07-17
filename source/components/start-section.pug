@@ -1,0 +1,20 @@
+section.start-section
+  .wrapper
+    .start-section__container
+      img.start-section__img(src="images/start-section-img.png" loading="lazy" width="477" height="345" alt="image")
+      .finances-section__line
+      .start-section__box
+        .start-section__title.font-s-74.font-w-zt-medium.text-up
+          | Сделайте <br>
+          span.mark первый шаг,
+        .start-section__sub-title.font-w-fiorina.font-s-42
+          | узнайте лучшие места для <br> открытия 
+          span.mark-red вашего ресторана
+        .start-section__text.font-w-medium.font-s-18
+          | Просто укажите название вашего города и получите <br>
+          span.mark-yellow список удачных локаций
+        form.start-section__form(data-feedback-form)
+          input.start-item.input(type="text" name="city" autocomplete="off" placeholder="Название города")
+          button.start-item.btn.btn--no-shadow(type="submit") Получить список локаций
+        img.start-section__img-hand(src="images/start-section-img-hand.png" loading="lazy" width="597" height="758" alt="image")
+

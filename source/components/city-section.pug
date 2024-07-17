@@ -1,0 +1,14 @@
+section.city-section
+  .reasons-section__arc-up
+  .wrapper
+    .city-section__container
+      h2.city-section__title.font-w-zt-medium.font-s-85.text-up Открой свой <br> ресторан <br> прямо сейчас
+      .city-section__text.font-w-regular.font-s-18 Проверьте, свободен ли ваш город для работы по франшизе
+      form.city-section__form(data-feedback-form)
+        input.item-main.input(type="text" name="city" autocomplete="off" placeholder="Ваш город")
+        input.item-main.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn.item-main(type="submit") ПРОВЕРИТЬ
+        .city-section__privacy.item-main
+          include ../components/agree.pug
+      img.city-section__img(src="images/city-section-img.png" loading="lazy" width="559" height="651" alt="image")
+

@@ -1,0 +1,114 @@
+.support-section
+  background-color #F5F5F5
+
+  &__container
+    position relative
+    z-index 1
+    color: $color-text-black
+    padding 20px 0 20px 0
+    +above($breakpoints.lg)
+      padding 110px 0 134px 0
+
+  &__img
+    display: none
+    +above($breakpoints.xl)
+      display: block
+      position: absolute
+      width 300px
+      height: auto
+      z-index -1
+      bottom: 300px
+      right: 0
+    +above($breakpoints.xxl)
+      width 480px
+      height: 681px
+      bottom: 300px
+      right: 0px
+    +above($breakpoints.xxxl)
+      bottom: 330px
+      right: 0px
+
+  &__line
+    width 0px
+    height: 30px
+    border-left: 1px solid $color-dark-red
+    margin 0 auto
+    +above($breakpoints.md)
+      height: 50px
+
+  &__title
+    padding 20px 0
+    +above($breakpoints.lg)
+      padding 32px 0
+
+  &__text
+    padding-bottom 20px
+    +above($breakpoints.lg)
+      padding-bottom 98px
+
+  &__cards
+    padding-bottom 20px
+    +above($breakpoints.sm)
+      margin 0 auto
+      width 100%
+      max-width: 665px
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      gap 40px
+    +above($breakpoints.lg)
+      padding-bottom 57px
+    +above($breakpoints.xl)
+      margin 0
+
+  &__card
+    width 250px !important
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content center
+    gap: 15px
+    +above($breakpoints.sm)
+      gap: 28px
+      width 300px !important
+      padding-left 40px
+      justify-content start
+    +above($breakpoints.xl)
+      padding-left 0
+
+  &__bottom
+    width 100%
+    max-width 984px
+    margin 30px auto 0
+    color: $color-white
+    background-color $color-text-black
+    border-radius: 10px
+    padding 12px
+    +above($breakpoints.md)
+      margin 76px auto 0
+
+  &__bottom-wrapper
+    border: 1px solid $color-yellow
+    border-radius: 10px
+    padding 20px 20px
+    +above($breakpoints.xxxl)
+      padding 36px 50px
+
+  &__bottom-title
+    padding 0 0 24px 0
+
+  &__form
+    display: flex
+    flex-direction: column
+    gap: 10px
+    margin: 0 auto 18px
+    align-items: center
+    +above($breakpoints.sm)
+      justify-content center
+      flex-direction: row
+      flex-wrap: wrap
+
+  &__privacy
+    text-align: center
+    color: #DDDDDD
+

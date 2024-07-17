@@ -1,0 +1,45 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      .finances-section__line
+      h2.finances-section__title.font-s-74.font-w-zt-medium.text-center.text-up
+        | Франшиза 
+        span.mark ROSES PARK 
+        | в цифрах
+      .finances-section__text.font-w-medium.font-s-20.text-center Знаем, как открыть прибыльный ресторанный бизнес
+      .swiper-medium
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card.swiper-slide
+            .font-w-fiorina.font-s-34.mark от 351 000 руб.
+            .finances-section__card-text.font-s-16 средняя чистая <br> ежемесячная прибыль
+          .finances-section__card.swiper-slide
+            .font-w-fiorina.font-s-34.mark от 16 месяцев
+            .finances-section__card-text.font-s-16 срок окупаемости <br> вашего бизнеса
+          .finances-section__card.swiper-slide
+            .font-w-fiorina.font-s-34.mark от 32,6%
+            .finances-section__card-text.font-s-16 рентабельность <br> по чистой прибыли
+          .finances-section__card.swiper-slide
+            .font-w-fiorina.font-s-34.mark от 4,2 млн руб.
+            .finances-section__card-text.font-s-16 средняя чистая <br> годовая прибыль
+          .finances-section__card.swiper-slide
+            .font-w-fiorina.font-s-34.mark от 1 000 руб.
+            .finances-section__card-text.font-s-16 размер <br> среднего чека
+          .finances-section__card.swiper-slide
+            .font-w-fiorina.font-s-34.mark  от 6,17 млн руб.
+            .finances-section__card-text.font-s-16 первоначальные <br> инвестиции
+        .medium-pagination.swiper-progress-medium
+      img.finances-section__img(src="images/finances-section-img.png" loading="lazy" width="555" height="554" alt="image")
+      .finances-section__bottom
+        .finances-section__bottom-wrapper
+          .finances-section__bottom-title.font-w-regular.font-s-24.text-center Ознакомьтесь детально с финансовыми <br> расчётами вашего будущего бизнеса
+          .finances-section__bottom-text.text-center
+            span.font-s-18 Скачайте финансовую модель 
+            span.mark-yellow.font-w-medium.font-s-18 ROSES PARK
+          form.finances-section__form(data-feedback-form)
+            input.input.item-finances(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+            input.input.item-finances(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+            button.btn.btn--black-shadow.item-finances(type="submit") скачать
+          .finances-section__privacy
+            include ../components/agree.pug
+      .finances-section__geometric
+
