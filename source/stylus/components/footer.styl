@@ -32,9 +32,15 @@
 
   &__connection-order
     cursor pointer
-    +above($breakpoints.xxxl)
-      padding-left 210px
 
   &__connection-order,
   &__privacy
     text-decoration: underline
+
+  &__connection
+    display: flex
+    flex-direction: column
+    align-items: center
+    +above($breakpoints.xxxl)
+      flex-direction: row
+      gap: 20px

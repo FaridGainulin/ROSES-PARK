@@ -13,8 +13,16 @@ section.start-section
         .start-section__text.font-w-medium.font-s-18
           | Просто укажите название вашего города и получите <br>
           span.mark-yellow список удачных локаций
-        form.start-section__form(data-feedback-form)
-          input.start-item.input(type="text" name="city" autocomplete="off" placeholder="Название города")
+        form(data-city-form).start-section__form
+          .input.js-input-city.start-item
+            input.start-item.input.input-city-position(type="text" name="city" placeholder="Название города")
+            .input__progress.js-input-city-progress
+              span.js-input-city-percent 0%
           button.start-item.btn.btn--no-shadow(type="submit") Получить список локаций
+        //- form.start-section__form(data-city-form)
+        //-   input.start-item.input(type="text" name="city" autocomplete="off" placeholder="Название города")
+        //-   .input__progress.js-input-city-progress
+        //-     span.js-input-city-percent 0%
+        //-   button.start-item.btn.btn--no-shadow(type="submit") Получить список локаций
         img.start-section__img-hand(src="images/start-section-img-hand.png" loading="lazy" width="597" height="758" alt="image")
 
